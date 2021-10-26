@@ -56,8 +56,9 @@ spec:
             requests.post("http://localhost:4191/shutdown", data={"hello":"shutdown"})
             EOF`
             python -c "$PY"
+        # Linkerd needs to know which ports the container bind to. Otherwise, the proxy crashes
         ports:
-        - containerPort: {{ .Values.service.internalPort }}
+        - containerPort: {{ .Values.service.internalPort }} 
         env:
         - name: SENTRY_DSN
           value: {{ .Values.sentryDSN | quote }}
