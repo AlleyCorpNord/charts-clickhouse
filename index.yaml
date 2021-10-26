@@ -63,8 +63,8 @@ entries:
     - https://github.com/PostHog/charts-clickhouse
     type: application
     urls:
-    - https://github.com/PostHog/charts-clickhouse/releases/download/posthog-4.0.0/posthog-4.0.0.tgz
-    version: 4.0.0
+    - https://github.com/PostHog/charts-clickhouse/releases/download/posthog-4.1.1-acn/posthog-4.1.1-acn.tgz
+    version: 4.1.1
   - apiVersion: v2
     appVersion: 1.29.0
     created: "2021-10-21T15:19:14.998775767Z"
