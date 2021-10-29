@@ -462,6 +462,7 @@ clickhouse:
   # servers:
   # - host: posthog-posthog-zookeeper
   #   port: 2181
+  storageClassName:
   # -- Optional: Used to manually specify a persistent volume claim. When specified the cloud specific storage class will not be provisioned
   persistentVolumeClaim:
   # -- Toleration labels for clickhouse pod assignment
